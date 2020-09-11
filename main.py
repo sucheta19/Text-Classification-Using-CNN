@@ -68,3 +68,5 @@ if __name__ == "__main__":
                 epochs=config["training"]["epochs"],
                 batch_size=config["training"]["batch_size"],
                 checkpoint_every=config["training"]["checkpoint_every"])
+    weights = model.get_weights()
+    print (weights)            
